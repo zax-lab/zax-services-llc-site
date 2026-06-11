@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Zax Services LLC | Local Service Coordination in South Carolina</title>
+  <meta name="description" content="Zax Services LLC provides practical local service coordination, property support, light maintenance coordination, cleanout, grounds, and facility-support services in South Carolina." />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Zax Services LLC" />
+  <meta property="og:description" content="Local service coordination, property support, and facility-support services in South Carolina." />
+  <meta property="og:type" content="website" />
+  <style>
+    :root {
+      --bg: #f7f4ee;
+      --ink: #17211b;
+      --muted: #5f6a62;
+      --card: #ffffff;
+      --line: #d8d0c2;
+      --accent: #245a3d;
+      --accent-2: #b88746;
+      --shadow: 0 18px 55px rgba(30, 25, 17, 0.10);
+      --radius: 22px;
+      color-scheme: light;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(184, 135, 70, .18), transparent 34rem),
+        linear-gradient(180deg, #fbf8f2 0%, var(--bg) 48%, #efe8dc 100%);
+      color: var(--ink);
+      line-height: 1.55;
+    }
+
+    a { color: inherit; }
+    .wrap { width: min(1120px, calc(100% - 40px)); margin: 0 auto; }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      backdrop-filter: blur(16px);
+      background: rgba(247, 244, 238, .82);
+      border-bottom: 1px solid rgba(216, 208, 194, .75);
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      padding: 16px 0;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      font-size: 1.12rem;
+      text-decoration: none;
+    }
+
+    .mark {
+      width: 38px;
+      height: 38px;
+      border-radius: 12px;
+      display: grid;
+      place-items: center;
+      color: white;
+      background: linear-gradient(135deg, var(--accent), #193b2b);
+      box-shadow: 0 10px 26px rgba(36, 90, 61, .22);
+      font-weight: 900;
+    }
+
+    .navlinks {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      color: var(--muted);
+      font-size: .95rem;
+    }
+
+    .navlinks a { text-decoration: none; }
+    .navlinks a:hover { color: var(--ink); }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 12px 16px;
+      border-radius: 999px;
+      background: var(--accent);
+      color: white;
+      font-weight: 750;
+      text-decoration: none;
+      border: 1px solid rgba(255, 255, 255, .16);
+      box-shadow: 0 14px 34px rgba(36, 90, 61, .2);
+      white-space: nowrap;
+    }
+
+    .btn.secondary {
+      background: transparent;
+      color: var(--accent);
+      border-color: rgba(36, 90, 61, .24);
+      box-shadow: none;
+    }
+
+    .hero {
+      padding: 82px 0 52px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.18fr .82fr;
+      gap: 38px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 7px 12px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, .62);
+      color: var(--muted);
+      font-size: .9rem;
+      font-weight: 700;
+    }
+
+    .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--accent-2);
+      box-shadow: 0 0 0 5px rgba(184, 135, 70, .18);
+    }
+
+    h1 {
+      margin: 22px 0 18px;
+      max-width: 780px;
+      font-size: clamp(2.55rem, 6vw, 5.45rem);
+      line-height: .94;
+      letter-spacing: -0.07em;
+    }
+
+    .lead {
+      max-width: 720px;
+      margin: 0 0 28px;
+      color: var(--muted);
+      font-size: clamp(1.05rem, 1.6vw, 1.22rem);
+    }
+
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 26px; }
+
+    .trust {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      max-width: 760px;
+    }
+
+    .trust div, .panel, .card {
+      background: rgba(255, 255, 255, .74);
+      border: 1px solid rgba(216, 208, 194, .86);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .trust div { padding: 15px; }
+    .trust strong { display: block; font-size: 1.35rem; letter-spacing: -.04em; }
+    .trust span { color: var(--muted); font-size: .92rem; }
+
+    .panel { padding: 26px; }
+    .panel h2 { margin-top: 0; font-size: 1.5rem; letter-spacing: -.04em; }
+    .checklist { padding: 0; margin: 18px 0 0; list-style: none; }
+    .checklist li { display: flex; gap: 10px; padding: 10px 0; color: var(--muted); border-top: 1px solid rgba(216, 208, 194, .55); }
+    .checklist li::before { content: "✓"; color: var(--accent); font-weight: 900; }
+
+    section { padding: 54px 0; }
+    .section-head { max-width: 740px; margin-bottom: 24px; }
+    .section-head h2 { margin: 0 0 10px; font-size: clamp(2rem, 3vw, 3.1rem); line-height: 1; letter-spacing: -.06em; }
+    .section-head p { margin: 0; color: var(--muted); font-size: 1.05rem; }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .card { padding: 22px; }
+    .card h3 { margin: 0 0 8px; letter-spacing: -.03em; font-size: 1.2rem; }
+    .card p { margin: 0; color: var(--muted); }
+
+    .band {
+      padding: 34px;
+      border-radius: 30px;
+      background: #173828;
+      color: white;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 24px;
+      align-items: center;
+      box-shadow: 0 24px 70px rgba(23, 56, 40, .24);
+    }
+    .band h2 { margin: 0 0 8px; letter-spacing: -.05em; font-size: clamp(1.8rem, 3vw, 2.7rem); }
+    .band p { margin: 0; color: rgba(255,255,255,.76); }
+    .band .btn { background: white; color: #173828; box-shadow: none; }
+
+    .policy-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    footer {
+      padding: 34px 0;
+      color: var(--muted);
+      border-top: 1px solid rgba(216, 208, 194, .9);
+    }
+    footer .footer-row { display: flex; justify-content: space-between; gap: 18px; flex-wrap: wrap; }
+
+    @media (max-width: 850px) {
+      .hero-grid, .band, .policy-grid { grid-template-columns: 1fr; }
+      .cards, .trust { grid-template-columns: 1fr; }
+      .navlinks a:not(.btn) { display: none; }
+      .wrap { width: min(100% - 28px, 1120px); }
+      .hero { padding-top: 58px; }
+      .panel { padding: 22px; }
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Zax Services LLC",
+    "telephone": "+1-821-202-8733",
+    "areaServed": "South Carolina",
+    "description": "Local service coordination, property support, and facility-support services in South Carolina.",
+    "priceRange": "By quote"
+  }
+  </script>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="#top" aria-label="Zax Services LLC home">
+        <span class="mark">ZS</span>
+        <span>Zax Services LLC</span>
+      </a>
+      <nav class="navlinks" aria-label="Primary navigation">
+        <a href="#services">Services</a>
+        <a href="#process">Process</a>
+        <a href="#policies">Policies</a>
+        <a class="btn" href="tel:+18212028733">Call / Text</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <div class="eyebrow"><span class="dot"></span> South Carolina service support</div>
+          <h1>Practical local services, handled cleanly.</h1>
+          <p class="lead">Zax Services LLC helps homeowners, small businesses, and property teams coordinate practical support work: cleanouts, basic property upkeep, grounds support, hauling coordination, light maintenance coordination, and facility-support projects.</p>
+          <div class="hero-actions">
+            <a class="btn" href="tel:+18212028733">Call or text 821-202-8733</a>
+            <a class="btn secondary" href="#services">View services</a>
+          </div>
+          <div class="trust" aria-label="Business highlights">
+            <div><strong>By quote</strong><span>Clear scope before work begins</span></div>
+            <div><strong>Local</strong><span>South Carolina-focused service area</span></div>
+            <div><strong>Practical</strong><span>Property, cleanup, and support work</span></div>
+          </div>
+        </div>
+
+        <aside class="panel" aria-label="Request a quote">
+          <h2>Request a quote</h2>
+          <p>For current availability, pricing, or a scope review, call or text:</p>
+          <p style="font-size: 1.55rem; font-weight: 850; letter-spacing: -.04em; margin: 14px 0;"><a href="tel:+18212028733">821-202-8733</a></p>
+          <p style="color: var(--muted); margin-bottom: 0;">Please include your location, what you need done, timeline, photos if available, and whether the work is residential or commercial.</p>
+          <ul class="checklist">
+            <li>Written scope before paid work starts</li>
+            <li>Simple quotes for straightforward jobs</li>
+            <li>Referral or subcontractor coordination when a licensed trade is required</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Services</h2>
+          <p>Work is quoted based on scope, location, timing, materials, and whether subcontractor support is required.</p>
+        </div>
+        <div class="cards">
+          <article class="card">
+            <h3>Property support</h3>
+            <p>General property upkeep, site checks, basic punch-list coordination, small-task support, and help preparing a property for use, showing, or turnover.</p>
+          </article>
+          <article class="card">
+            <h3>Cleanout & hauling coordination</h3>
+            <p>Cleanout planning, removal coordination, light hauling support, disposal coordination, and cleanup projects where the scope is clear and safe.</p>
+          </article>
+          <article class="card">
+            <h3>Grounds & exterior support</h3>
+            <p>Yard cleanup, groundskeeping coordination, seasonal exterior support, and connecting the right operator to the job when additional equipment is needed.</p>
+          </article>
+          <article class="card">
+            <h3>Facility-support coordination</h3>
+            <p>Support for small businesses, offices, property managers, and local operators that need practical help coordinating non-specialized service work.</p>
+          </article>
+          <article class="card">
+            <h3>Light maintenance coordination</h3>
+            <p>Basic maintenance planning and coordination. Licensed electrical, plumbing, HVAC, structural, or regulated work is referred to properly qualified professionals.</p>
+          </article>
+          <article class="card">
+            <h3>Custom local projects</h3>
+            <p>If the job is practical, lawful, and clearly scoped, Zax Services LLC can review it and either quote it, coordinate it, or recommend the right next step.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="process">
+      <div class="wrap">
+        <div class="band">
+          <div>
+            <h2>Simple process. No vague commitments.</h2>
+            <p>Send the job details, receive a scope/quote, approve the work, then schedule service. If the job requires a licensed trade or specialized insurance, the scope will be adjusted or referred before work begins.</p>
+          </div>
+          <a class="btn" href="tel:+18212028733">Start by phone</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="policies">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Payment & service policies</h2>
+          <p>These policies keep expectations clear for customers and payment processing.</p>
+        </div>
+        <div class="policy-grid">
+          <article class="card">
+            <h3>Pricing</h3>
+            <p>Pricing is provided by quote or invoice. Quotes may include labor, materials, subcontractor costs, travel, disposal fees, and other job-specific costs when applicable.</p>
+          </article>
+          <article class="card">
+            <h3>Payment</h3>
+            <p>Payment terms are listed on the approved quote or invoice. Deposits may be required for materials, scheduling, or subcontractor costs before work begins.</p>
+          </article>
+          <article class="card">
+            <h3>Cancellations & refunds</h3>
+            <p>If a job is cancelled before work begins, refundable amounts are returned minus approved materials, disposal, travel, subcontractor, or other unrecoverable costs. Completed service work is generally not refundable, but correction requests will be reviewed in good faith.</p>
+          </article>
+          <article class="card">
+            <h3>Privacy</h3>
+            <p>Customer information is used to review, quote, schedule, invoice, and complete requested services. Zax Services LLC does not sell customer contact information.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-row">
+      <span>© <span id="year"></span> Zax Services LLC. All rights reserved.</span>
+      <span>South Carolina • <a href="tel:+18212028733">821-202-8733</a> • <a href="privacy.html">Privacy</a> • <a href="terms.html">Terms & refunds</a></span>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
